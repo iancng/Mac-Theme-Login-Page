@@ -1,0 +1,103 @@
+body{
+  background-image: url(../img/background.jpg);
+  height:100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue","Lucida Grande", "Segoe UI";
+}
+
+.userImage{
+  background-color:white;
+  display: block;
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height:15vh;
+  border-radius: 50%;
+}
+
+.username{
+  color:white;
+  text-align:center;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+input[type=password]::placeholder{
+  color:white;
+}
+
+
+@media only screen and (min-width: 1112px) {
+  input[type=password]{
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-color:grey;
+    color:white;
+    letter-spacing: 0.02vw;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    height:2.5vh;
+    width:12vw;
+    opacity: 0.7;
+    transform: translate(-50%, -50%);
+    filter: blur(0.1px);
+    -webkit-filter: blur(0.1px);
+  }
+  .arrow-right{
+    opacity: 0.7;
+    height: 2.5vh;
+  }
+  button[type=submit]{
+    display:block;
+    position: fixed;
+    top: 55%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: none;
+    opacity: 0.7;
+  }
+
+}
+@media only screen and (max-width: 1111px) {
+  input[type=password]{
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-color:grey;
+    color:white;
+    letter-spacing: 0.05vw;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    height:5vh;
+    width:25vw;
+    transform: translate(-50%, -50%);
+    filter: blur(0.3px);
+    -webkit-filter: blur(0.3px);
+  }
+  button[type=submit]{
+    display:block;
+    position: fixed;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: none;
+    opacity: 0.7;
+  }
+  .arrow-right{
+    opacity: 0.7;
+    height: 5vh;
+  }
+
+}
